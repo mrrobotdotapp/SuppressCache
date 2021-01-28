@@ -7,6 +7,8 @@ Even after a change on your side, Discord can still keep the old version in its 
 ### 💻 Code
 
 ```js
+FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+
 function getFolderIcons(File) {
     const min = Math.ceil(0)
         , max = Math.floor(9999999999999)
