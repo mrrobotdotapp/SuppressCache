@@ -16,11 +16,11 @@ FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
 
 /* ——— function ——— */
 
-function getFolderIcons(File) {
+function getFolderIcons(File, Log) {
     const min = Math.ceil(0)
         , max = Math.floor(9999999999999)
         , GenNumberCache = Math.floor(Math.random() * (max - min + 1)) + min
-    console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`) // Test me !
+    if (Log === true) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`); // Test me !
     return `${FolderIcons}/${File}?NoCache=${GenNumberCache}`
 }
 
