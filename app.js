@@ -20,9 +20,9 @@ function getFolderIcons(File, Log) {
     const min = Math.ceil(0)
         , max = Math.floor(9999999999999)
         , GenNumberCache = Math.floor(Math.random() * (max - min + 1)) + min
-    if (Log === true) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`); // Test me !
+    if (Log) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`)
     return `${FolderIcons}/${File}?NoCache=${GenNumberCache}`
 }
 
 /* ——— This is a test ——— */
-getFolderIcons('processor.png')
+getFolderIcons('processor.png', true)
