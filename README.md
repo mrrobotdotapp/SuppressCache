@@ -9,16 +9,14 @@ Even after a change on your side, Discord can still keep the old version in its 
 ```js
 FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
 
-function getFolderIcons(File) {
-    const min = Math.ceil(0)
-        , max = Math.floor(9999999999999)
-        , GenNumberCache = Math.floor(Math.random() * (max - min + 1)) + min
-    console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`) // Test me !
+function getFolderIcons(File, Log) {
+    const GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
+    if (Log) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`)
     return `${FolderIcons}/${File}?NoCache=${GenNumberCache}`
 }
 ``` 
 
-🔬 Out : _https://mrrobot.app/Folder/Of/Icons/processor.png?NoCache=2679050025466_ (This url not working)
+🔬 Out : _https://mrrobot.app/Folder/Of/Icons/file.png?NoCache=gb0cqe0j_ (This url not working)
 
 ### 🎈 Awesome links
 Don't hesitate to follow me, you can also contribute to the development of all projects Open Source of Mr. Robøt by making a donation.
