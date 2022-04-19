@@ -1,7 +1,7 @@
 /*
 
     Hello friend()
-    GitHub of Mr. Robøt : https://github.com/Mist3r_Robot
+    GitHub of Mr. Robøt : https://github.com/MrRobotApp
     Website : https://thomasbnt.dev 
     — Thomas Bnt, Mr. Robøt 2021.
 
@@ -11,16 +11,29 @@
 
 */
 
-/* ——— Config ——— */
-FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+/** 
+ * @param {string} FolderIcons
+ * @param {number} NoCacheVersion 
+ */
 
-/* ——— function ——— */
+const FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+const NoCacheVersion = '1'
 
-function getFolderIcons(File, Log) {
-    const GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
-    if (Log) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`)
-    return `${FolderIcons}/${File}?NoCache=${GenNumberCache}`
+
+/**
+ * @param {string} file
+ * @param {boolean} log
+ * @param {boolean} desactivated
+ */
+
+function getFolderIcons(file, log, desactivated) {
+    if (!desactivated) {
+        var GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
+    } else {
+        var GenNumberCache = NoCacheVersion
+    }
+    if (log) console.log(`[NoCache] Output : ${FolderIcons}/${file}?NoCache=${GenNumberCache}`)
+    return `${FolderIcons}/${file}?NoCache=${GenNumberCache}`
 }
 
-/* ——— This is a test ——— */
 getFolderIcons('file.png', true)
