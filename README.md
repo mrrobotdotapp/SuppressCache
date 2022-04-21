@@ -7,13 +7,20 @@ Even after a change on your side, Discord can still keep the old version in its 
 ### 💻 Code
 
 ```js
-FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+const FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+const NoCacheVersion = '1'
 
-function getFolderIcons(File, Log) {
-    const GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
-    if (Log) console.log (`Out : ${FolderIcons}/${File}?NoCache=${GenNumberCache}`)
-    return `${FolderIcons}/${File}?NoCache=${GenNumberCache}`
+function getFolderIcons(file, log, desactivated) {
+    if (!desactivated) {
+        var GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
+    } else {
+        var GenNumberCache = NoCacheVersion
+    }
+    if (log) console.log(`[NoCache] Output : ${FolderIcons}/${file}?NoCache=${GenNumberCache}`)
+    return `${FolderIcons}/${file}?NoCache=${GenNumberCache}`
 }
+
+getFolderIcons('file.png', true)
 ``` 
 
 🔬 Out : _https://mrrobot.app/Folder/Of/Icons/file.png?NoCache=gb0cqe0j_ (This url not working)
