@@ -11,10 +11,11 @@ const FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
 const NoCacheVersion = '1'
 
 function getFolderIcons(file, log, desactivated) {
+    let GenNumberCache
     if (!desactivated) {
-        var GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
+        GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
     } else {
-        var GenNumberCache = NoCacheVersion
+        GenNumberCache = NoCacheVersion
     }
     if (log) console.log(`[NoCache] Output : ${FolderIcons}/${file}?NoCache=${GenNumberCache}`)
     return `${FolderIcons}/${file}?NoCache=${GenNumberCache}`

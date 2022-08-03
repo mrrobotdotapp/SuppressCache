@@ -27,13 +27,14 @@ const NoCacheVersion = '1'
  */
 
 function getFolderIcons(file, log, desactivated) {
+    let genNumberCache
     if (!desactivated) {
-        var GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
+        genNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
     } else {
-        var GenNumberCache = NoCacheVersion
+        genNumberCache = noCacheVersion
     }
-    if (log) console.log(`[NoCache] Output : ${FolderIcons}/${file}?NoCache=${GenNumberCache}`)
-    return `${FolderIcons}/${file}?NoCache=${GenNumberCache}`
+    if (log) console.log(`[NoCache] Output : ${folderIcons}/${file}?NoCache=${genNumberCache}`)
+    return `${folderIcons}/${file}?NoCache=${genNumberCache}`
 }
 
 getFolderIcons('file.png', true)
