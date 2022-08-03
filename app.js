@@ -12,12 +12,12 @@
 */
 
 /** 
- * @param {string} FolderIcons
- * @param {number} NoCacheVersion 
+ * @param {string} folderIcons
+ * @param {number} noCacheVersion 
  */
 
-const FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
-const NoCacheVersion = '1'
+const folderIcons = 'https://mrrobot.app/Folder/Of/Icons'
+const noCacheVersion = '1'
 
 
 /**
