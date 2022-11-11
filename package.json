@@ -2,10 +2,10 @@
   "name": "nocache",
   "version": "1.0.0",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
-  "main": "app.js",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "node app.js"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
