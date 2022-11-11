@@ -1,0 +1,26 @@
+{
+  "name": "nocache",
+  "version": "1.0.0",
+  "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mist3r-Robot/NoCache.git"
+  },
+  "keywords": [
+    "cache",
+    "clear",
+    "cloudflare",
+    "cdn"
+  ],
+  "author": "Thomas Bnt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mist3r-Robot/NoCache/issues"
+  },
+  "homepage": "https://github.com/Mist3r-Robot/NoCache#readme"
+}
