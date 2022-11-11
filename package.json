@@ -4,6 +4,9 @@
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "index.js",
   "devDependencies": {},
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "test": "node index.js"
   },
