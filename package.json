@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {},
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "node index.js"
