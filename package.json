@@ -1,6 +1,6 @@
 {
   "name": "suppresscache",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
   "devDependencies": {},
