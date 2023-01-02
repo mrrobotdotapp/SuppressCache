@@ -11,24 +11,33 @@ Even after a change on your side, Discord can still keep the old version in its 
 ## 💻 Code
 
 ```js
-const FolderIcons = 'https://mrrobot.app/Folder/Of/Icons'
-const NoCacheVersion = '1'
-
-function getFolderIcons(file, log, desactivated) {
-    let GenNumberCache
-    if (!desactivated) {
-        GenNumberCache = Math.round(Math.random() * 0xFFFFFFFFFF).toString(30)
-    } else {
-        GenNumberCache = NoCacheVersion
-    }
-    if (log) console.log(`[NoCache] Output : ${FolderIcons}/${file}?NoCache=${GenNumberCache}`)
-    return `${FolderIcons}/${file}?NoCache=${GenNumberCache}`
+function getFolderIcons(baseURL, file, log, disabled) {
+  let genNumberCache
+  if (baseURL === null || !baseURL) return console.error('[suppressCache] Error : baseURL is not defined. Please define it.')
+  if (file === null || !file) return console.error('[suppressCache] Error : file is not defined. Please define it.')
+  if (!disabled) {
+    genNumberCache = Math.round(Math.random() * 0xffffffffff).toString(30)
+  } else {
+    genNumberCache = suppressCacheVersion
+  }
+  log ? console.log(`[suppressCache] Output : ${baseURL}/${file}?suppressCache=${genNumberCache}`) : null
+  return `${baseURL}/${file}?suppressCache=${genNumberCache}`
 }
 
-getFolderIcons('file.png', true)
+getFolderIcons(
+  "https://mrrobot.app/Folder/Of/Icons",
+  "myFileName.png",
+  true,
+  false
+)
 ``` 
 
-🔬 Out : _https://mrrobot.app/Folder/Of/Icons/file.png?NoCache=gb0cqe0j_ (This url not working)
+Give that : 
+```console
+[suppressCache] Output : https://mrrobot.app/Folder/Of/Icons/file.png?suppressCache=gb0cqe0j
+```
+
+You can test this code directly with [`./test/app.js`](./test/app.js).
 
 ### 🎈 Awesome links
 Don't hesitate to follow me, you can also contribute to the development of all projects Open Source of Mr. Robøt by making a donation.
