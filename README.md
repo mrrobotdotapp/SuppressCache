@@ -1,5 +1,11 @@
 # Suppress Cache
 
+Install it directly from the [NPM registry](https://www.npmjs.com/package/suppresscache):
+
+```bash
+npm i suppresscache
+```
+
 This file is used on [the bot](https://mrrobot.app) for no cache files from CDNs. 
 Discord uses CloudFlare for caching management which can be problematic when you change an image and display it on the platform. 
 Even after a change on your side, Discord can still keep the old version in its cache.
@@ -11,18 +17,7 @@ Even after a change on your side, Discord can still keep the old version in its 
 ## 💻 Code
 
 ```js
-function getFolderIcons(baseURL, file, log, disabled) {
-  let genNumberCache
-  if (baseURL === null || !baseURL) return console.error('[suppressCache] Error : baseURL is not defined. Please define it.')
-  if (file === null || !file) return console.error('[suppressCache] Error : file is not defined. Please define it.')
-  if (!disabled) {
-    genNumberCache = Math.round(Math.random() * 0xffffffffff).toString(30)
-  } else {
-    genNumberCache = suppressCacheVersion
-  }
-  log ? console.log(`[suppressCache] Output : ${baseURL}/${file}?suppressCache=${genNumberCache}`) : null
-  return `${baseURL}/${file}?suppressCache=${genNumberCache}`
-}
+const { getFolderIcons } = require('supresscache');
 
 getFolderIcons(
   "https://mrrobot.app/Folder/Of/Icons",
@@ -42,4 +37,5 @@ You can test this code directly with [`./test/app.js`](./test/app.js).
 ### 🎈 Awesome links
 Don't hesitate to follow me, you can also contribute to the development of all projects Open Source of Mr. Robøt by making a donation.
 
+[![dependency - suppressCache](https://img.shields.io/badge/dependency-suppresscache-red?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com/package/suppresscache)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter&style=for-the-badge)](https://twitter.com/Thomasbnt_) [![Discord](https://img.shields.io/discord/715873768374796308?color=5865F2&label=Join%20us&logo=Discord&logoColor=white&style=for-the-badge)](https://mrrobot.app/discord) [![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20me-%23EA54AE.svg?&style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/thomasbnt) [![Support me on Buy Me a Coffee](https://img.shields.io/badge/-Support%20me-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/thomasbnt?via=thomasbnt)
