@@ -17,7 +17,7 @@ Even after a change on your side, Discord can still keep the old version in its 
 ## 💻 Code
 
 ```js
-const { getFolderIcons } = require('supresscache');
+const { getFolderIcons } = require('suppresscache');
 
 getFolderIcons(
   "https://mrrobot.app/Folder/Of/Icons",
