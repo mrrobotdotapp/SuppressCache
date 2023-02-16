@@ -9,12 +9,6 @@
  *    Even after a change on your side, Discord can still keep the old version in its cache.
  */
 
-/**
- * @param {number} suppressCacheVersion
- */
-
-const suppressCacheVersion = "1"
-
 module.exports = {
   /**
    * @param {string} baseURL
@@ -27,7 +21,7 @@ module.exports = {
     if (baseURL === null || !baseURL) return console.error("[suppressCache] Error : baseURL is not defined. Please define it.")
     if (file === null || !file) return console.error("[suppressCache] Error : file is not defined. Please define it.")
     baseURL.endsWith("/") ? baseURL = baseURL.slice(0, -1) : baseURL
-    !disabled ? (genNumberCache = Math.round(Math.random() * 0xffffffffff).toString(30)) : genNumberCache = suppressCacheVersion
+    !disabled ? (genNumberCache = Math.round(Math.random() * 0xffffffffff).toString(30)) : 1
     log ? console.log(`[suppressCache] Output : ${baseURL}/${file}?suppressCache=${genNumberCache}`) : null
     return `${baseURL}/${file}?suppressCache=${genNumberCache}`
   }
