@@ -2,7 +2,7 @@
  *   Hello friend()
  *   GitHub of Mr. Robøt : https://github.com/Mist3r-Robot
  *    Website : https://mrrobot.app
- *    — Thomas Bnt, Mr. Robøt 2022.
+ *    — Thomas Bnt, Mr. Robøt 2023.
  *
  *    This file is used on the bot (https://mrrobot.app) for no cache files from CDNs.
  *    Discord uses CloudFlare for caching management which can be problematic when you change an image and display it on the platform.
