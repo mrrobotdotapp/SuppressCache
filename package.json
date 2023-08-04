@@ -1,9 +1,8 @@
 {
   "name": "@mist3r-robot/suppresscache",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "node test/app.js"
   },
@@ -26,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Mist3r-Robot/SuppressCache/issues"
   },
-  "homepage": "https://github.com/Mist3r-Robot/SuppressCache#readme"
+  "homepage": "https://github.com/Mist3r-Robot/SuppressCache#readme",
+  "devDependencies": {
+    "prettier": "^3.0.1"
+  }
 }
