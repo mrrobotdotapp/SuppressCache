@@ -1,5 +1,5 @@
 {
-  "name": "suppresscache",
+  "name": "@Mist3r-Robot/SuppressCache",
   "version": "0.1.0",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
