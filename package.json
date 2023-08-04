@@ -1,6 +1,6 @@
 {
   "name": "@mist3r-robot/suppresscache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
   "devDependencies": {},
