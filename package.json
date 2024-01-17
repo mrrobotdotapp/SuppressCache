@@ -1,6 +1,6 @@
 {
   "name": "@mrrobotdotapp/suppresscache",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
   "scripts": {

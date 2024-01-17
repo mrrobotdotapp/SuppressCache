@@ -7,7 +7,7 @@ npm i @mrrobotdotapp/suppresscache
 ```
 
 This file is used on [the bot](https://mrrobot.app) for no cache files from CDNs. 
-Discord uses CloudFlare for caching management which can be problematic when you change an image and display it on the platform. 
+Discord uses CloudFlare for caching management which can be problematic when you change an image and display it on the platform.
 Even after a change on your side, Discord can still keep the old version in its cache.
 
 > **Note**
