@@ -1,5 +1,5 @@
 {
-  "name": "@mist3r-robot/suppresscache",
+  "name": "@mrrobotdotapp/suppresscache",
   "version": "0.2.0",
   "description": "Randomly generate a string to clear the cache of CloudFlare or other CDN.",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mist3r-Robot/SuppressCache.git"
+    "url": "https://github.com/mrrobotdotapp/SuppressCache.git"
   },
   "funding": {
     "type": "github",
@@ -23,9 +23,9 @@
   "author": "Thomas Bnt <contact+github[at]thomasbnt.fr> (https://thomasbnt.dev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mist3r-Robot/SuppressCache/issues"
+    "url": "https://github.com/mrrobotdotapp/SuppressCache/issues"
   },
-  "homepage": "https://github.com/Mist3r-Robot/SuppressCache#readme",
+  "homepage": "https://github.com/mrrobotdotapp/SuppressCache#readme",
   "devDependencies": {
     "prettier": "^3.0.1"
   }

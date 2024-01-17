@@ -1,6 +1,6 @@
 /**
  *   Hello friend()
- *   GitHub of Mr. Robøt : https://github.com/Mist3r-Robot
+ *   GitHub of Mr. Robøt : https://github.com/mrrobotdotapp
  *    Website : https://mrrobot.app
  *    — Thomas Bnt, Mr. Robøt 2023.
  *
